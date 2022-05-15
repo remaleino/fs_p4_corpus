@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    background: #e9f6ff;
+
+}
+
+label {
+    color: #34495e;
+}
+
+.home-menu {
+    overflow: hidden;
+    text-align: center;
+    border-bottom: none;
+    padding: 0.5em;
+    background: #2d3e50;
+    z-index: 4;
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu-item {
+    float: left;
+}
+
+.menu-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.home-menu a {
+    color: #6FBEF3;
+}
+
+.menu-selected a {
+    color: white;
+}
+
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+.container {
+    margin-top: -40px;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+}
+
+.col-25 {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 65%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#new_lemma,
+#part_of_speech {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.form_label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+#new_input {
+    background-color: #2aa3fa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .search-form {
+        display: block;
+        margin-left: auto;
+        margin-top: 60px;
+    }
+
+    .search-form label {
+        display: block;
+    }
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

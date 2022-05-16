@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom/client'
 import Axios from "axios";
 import './AddNew.css';
 import Header from './Header';
-
+//Routerin pääfunktio
 function AddNew() {
+    //Funktio lisää uuden kappaleen tietokantaan
     function addToDatab(event) {
+        //Estetään tiedon toistuvuuden ja määritetään tarpeelliset muuttujat
         event.preventDefault();
         const lemma = event.target.new_lemma.value
         const pos = event.target.part_of_speech.value
@@ -13,6 +15,7 @@ function AddNew() {
         const root = ReactDOM.createRoot(
             document.getElementById('status')
         );
+        //Lähetetään axiosin kautta post-pyyntö
         Axios.post("http://localhost:3001/words/post", dbItem)
             .then(res => {
                 root.render(res.data.message)
@@ -21,6 +24,7 @@ function AddNew() {
                 root.render("An error occured while adding the item." + err);
             })
     }
+    //Renderöidään sivuston ulkonäkö ja formi
     return (
         <div>
             <Header />

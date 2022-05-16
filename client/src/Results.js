@@ -5,9 +5,15 @@ import './Results.css';
 import Header from './Header';
 
 function Results() {
+    //Muuttujien määritystä. Tässä location:in avulla vastaanotetaan Home:sta dataa.
     const location = useLocation();
     const word = location.state[0].word
     const list = location.state[0].value;
+    /*
+    Sivusto palauttaa ulkonäön sekä muodostaa listan datan objekteista.
+    Pääsana eli hakusana ensin haetaan riviltä, korostetaan sitä ja lopuksi
+    muodostetaan uusi rivi alkuperäisen rivin osista.
+    */
     return (
         <div>
             <Header />

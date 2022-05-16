@@ -43,7 +43,13 @@ router.get('/:word', (req, res, next) => {
     const word = req.params.word
     word.toLowerCase()
     Word.find({ word: word }).exec().then(doc => {
+        /* Täällä erikseen määritetään toiminnot olemassa olevalle,
+        muttei tyhjälle tietokannalle.*/
         if (doc.length) {
+            /*Vastaanotettu data analysoidaa erikseen olevalla
+            Python-tiedostolla. Tätä varten määritetään tiedoston sijainti
+            ja napataan se, minkä jälkeen määritetäään tiedoston aukaisemisen
+            ja sulkemisen toiminnot. Lisäksi määritetään errorien vastaanottamisen.*/
             let dataList = [];
             const python = spawn('python3', ['api/routes/script.py', word]);
             python.stdout.on('data', function (data) {

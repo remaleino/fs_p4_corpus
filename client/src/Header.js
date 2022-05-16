@@ -1,8 +1,7 @@
 import React from "react";
-
+//Header palauttaa navigointipalkin
 export default function Header() {
     return (
-
         <div>
             <div className="home-menu">
                 <lable>English Corpus - Basing on "The Brothers Karamazov" by Fyodor Dostoyevsky</lable>

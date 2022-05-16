@@ -5,7 +5,8 @@ import Results from './Results';
 import Home from './Home';
 import AddNew from './AddNew';
 import ControllData from './ControllData';
-
+//Määritetään ja palautetaan äpin routerit
+//Navigoinnista vastaa erikseen Header-komponentti
 function App() {
   return (
     <Router>

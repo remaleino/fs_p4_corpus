@@ -3,7 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
+//Täällä tärkeintä on määritellä alkurouter, mikä on App-konponentti.
+//Samalla määritetään index.html-elementti, jota kaikki palautukset 
+//tulevat koskemaan.
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

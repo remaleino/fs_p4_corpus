@@ -13,3 +13,4 @@ Second go to client folder and run "npm start". This should open the app on port
 
 
 Special thanks to The Project Gutenberg eBook. Your guys are awesome.
+![](https://github.com/remaleino/fs_p4_corpus/blob/main/corpus_search.gif)
